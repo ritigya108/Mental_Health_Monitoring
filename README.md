@@ -1,189 +1,233 @@
-# Mental Health AI Monitoring - Backend
+# 🧠 MindCare - Streamlit Version
 
-FastAPI-based backend for AI-powered mental health monitoring and support system.
+AI-powered mental health monitoring application built with Streamlit.
 
-## Features
+## 🌟 Features
 
-- 🔐 User authentication and profile management
-- 📊 Mood tracking and visualization
-- 📝 Journal entries with AI sentiment analysis
-- 🤖 AI-powered risk assessment
-- 💬 Chatbot for mental health support
-- 📈 Personalized recommendations
-- ⚠️ Crisis detection and alerts
+- **📊 Dashboard** - Overview of your mental health status with charts and metrics
+- **😊 Mood Tracker** - Log daily mood with interactive slider and emoji visualization
+- **📝 Journal** - Write entries with real-time AI sentiment analysis
+- **💬 AI Chat** - Intelligent chatbot for mental health support
+- **📚 Resources** - Crisis hotlines, articles, videos, and exercises
+- **👤 Profile** - Manage your account and settings
 
-## Tech Stack
+## 🚀 Quick Start
 
-- **Framework**: FastAPI
-- **Database**: SQLite (development) / PostgreSQL (production)
-- **AI/ML**: 
-  - Transformers (Hugging Face)
-  - VADER Sentiment Analysis
-  - TextBlob
-  - scikit-learn
-- **Authentication**: JWT tokens
-
-## Setup Instructions
-
-### 1. Create Virtual Environment
+### 1. Install Dependencies
 
 ```bash
-# Navigate to backend directory
-cd mental-health-ai/backend
-
-# Create virtual environment
-python3 -m venv venv
-
-# Activate virtual environment
-# On macOS/Linux:
-source venv/bin/activate
-# On Windows:
-# venv\Scripts\activate
-```
-
-### 2. Install Dependencies
-
-```bash
+cd streamlit-app
 pip install -r requirements.txt
 ```
 
-### 3. Configure Environment Variables
+### 2. Run the Application
 
 ```bash
-# Copy example env file
-cp .env.example .env
-
-# Edit .env file with your configuration
-# nano .env  # or use any text editor
+streamlit run Home.py
 ```
 
-### 4. Initialize Database
+The app will open automatically in your browser at `http://localhost:8501`
 
-```bash
-# Run Python to initialize database
-python -c "from database import init_db; init_db()"
+## 📁 Project Structure
+
+```
+streamlit-app/
+├── Home.py                      # Main dashboard page
+├── pages/
+│   ├── 1_Mood_Tracker.py       # Mood logging interface
+│   ├── 2_Journal.py            # Journal with AI analysis
+│   ├── 3_AI_Chat.py            # Chatbot interface
+│   ├── 4_Resources.py          # Mental health resources
+│   └── 5_Profile.py            # User profile and settings
+├── requirements.txt             # Python dependencies
+└── README.md                    # This file
 ```
 
-### 5. Run the Server
+## 🎯 How to Use
 
-```bash
-# Development mode with auto-reload
-python main.py
+### Dashboard (Home)
+- View your mental health overview
+- See mood trends with interactive charts
+- Check current streak and statistics
+- Quick access to all features
 
-# Or using uvicorn directly
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
-```
-
-The API will be available at: `http://localhost:8000`
-
-API Documentation (Swagger UI): `http://localhost:8000/docs`
-
-## API Endpoints
-
-### Health & Status
-- `GET /` - Root endpoint
-- `GET /health` - Health check
-
-### User Management
-- `POST /api/users/register` - Register new user
-- `GET /api/users/{user_id}` - Get user profile
-
-### Mood Tracking
-- `POST /api/mood/log` - Log mood entry
-- `GET /api/mood/history/{user_id}` - Get mood history
+### Mood Tracker
+- Rate your mood from 1-10
+- Add optional notes
+- View mood history
+- Quick emoji selection
 
 ### Journal
-- `POST /api/journal/entry` - Create journal entry
-- `GET /api/journal/entries/{user_id}` - Get journal entries
+- Write journal entries
+- Get instant AI sentiment analysis
+- View past entries with sentiment scores
+- Track emotional patterns
 
-### AI Analysis
-- `POST /api/analyze/sentiment` - Analyze text sentiment
-- `GET /api/analyze/risk/{user_id}` - Assess mental health risk
+### AI Chat
+- Chat with AI mental health companion
+- Get support for anxiety, stress, depression
+- Crisis detection and intervention
+- Quick response buttons
 
-### Recommendations
-- `GET /api/recommendations/{user_id}` - Get personalized recommendations
+### Resources
+- Access crisis hotlines (988, Crisis Text Line)
+- Read educational articles
+- Watch helpful videos
+- Try practical exercises
 
-### Chatbot
-- `POST /api/chat` - Chat with AI assistant
+### Profile
+- Update personal information
+- Manage notification settings
+- View your statistics
+- Security settings
 
-## Project Structure
+## 🔧 Configuration
 
+### Customization
+
+You can customize the app by modifying:
+- **Theme**: Edit `.streamlit/config.toml` (create if doesn't exist)
+- **Colors**: Modify CSS in each page file
+- **Content**: Update text and resources in page files
+
+### Example config.toml
+
+```toml
+[theme]
+primaryColor = "#6366f1"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f0f2f6"
+textColor = "#262730"
+font = "sans serif"
 ```
-backend/
-├── main.py              # FastAPI application and routes
-├── models.py            # SQLAlchemy database models
-├── database.py          # Database configuration
-├── ai_analyzer.py       # AI/ML sentiment analysis
-├── requirements.txt     # Python dependencies
-├── .env.example         # Environment variables template
-└── README.md           # This file
-```
 
-## AI Models
+## 🤖 AI Features
 
-The system uses multiple AI approaches for comprehensive analysis:
+### Sentiment Analysis
+- **VADER**: Rule-based sentiment analysis
+- **TextBlob**: Pattern-based sentiment analysis
+- **Combined Score**: Average of multiple models
 
-1. **VADER Sentiment**: Rule-based sentiment analysis, excellent for social media text
-2. **TextBlob**: Pattern-based sentiment analysis with polarity and subjectivity
-3. **Transformers**: Deep learning models for advanced sentiment understanding
-4. **Custom Risk Assessment**: Multi-factor algorithm combining sentiment, mood trends, and crisis keywords
+### Crisis Detection
+Automatically detects concerning keywords:
+- Suicide-related terms
+- Self-harm indicators
+- Severe depression markers
 
-## Crisis Detection
+## 📊 Data Storage
 
-The system includes crisis keyword detection for:
-- High-risk indicators (immediate intervention needed)
-- Medium-risk indicators (professional help recommended)
-- Low-risk indicators (monitoring and self-care)
+Currently uses Streamlit's session state for data storage. For production:
+- Add database integration (SQLite, PostgreSQL)
+- Implement user authentication
+- Add data persistence
 
-**Important**: This is a support tool, not a replacement for professional mental health care.
+## ⚠️ Important Notes
 
-## Development
+1. **Not a Replacement**: This app is a support tool, not a replacement for professional mental health care
+2. **Crisis Support**: Always call 988 (US) or local emergency services in crisis
+3. **Privacy**: Data is stored locally in session state (not persistent)
+4. **Development**: This is a development version, not production-ready
 
-### Adding New Endpoints
+## 🔒 Security Considerations
 
-1. Define Pydantic models in `main.py`
-2. Create route handler function
-3. Implement business logic
-4. Add database operations if needed
+For production deployment:
+- [ ] Add user authentication
+- [ ] Implement HTTPS
+- [ ] Add database encryption
+- [ ] Implement rate limiting
+- [ ] Add input validation
+- [ ] Follow HIPAA/GDPR compliance
 
-### Testing
+## 🚀 Deployment
+
+### Streamlit Cloud (Free)
+
+1. Push code to GitHub
+2. Go to [share.streamlit.io](https://share.streamlit.io)
+3. Connect your repository
+4. Deploy!
+
+### Local Network
 
 ```bash
-# Install pytest
-pip install pytest pytest-asyncio httpx
-
-# Run tests (when test files are created)
-pytest
+streamlit run Home.py --server.address 0.0.0.0
 ```
 
-## Security Considerations
+### Docker
 
-- Always use HTTPS in production
-- Keep SECRET_KEY secure and unique
-- Implement rate limiting
-- Validate and sanitize all user inputs
-- Follow HIPAA/GDPR compliance for health data
-- Regular security audits
+```dockerfile
+FROM python:3.9-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+EXPOSE 8501
+CMD ["streamlit", "run", "Home.py"]
+```
 
-## Next Steps
+## 📝 Development
 
-1. ✅ Set up virtual environment
-2. ✅ Install dependencies
-3. ✅ Configure environment variables
-4. ✅ Initialize database
-5. ✅ Run the server
-6. 🔄 Test API endpoints
-7. 🔄 Integrate with frontend
-8. 🔄 Add authentication
-9. 🔄 Implement remaining features
-10. 🔄 Deploy to production
+### Adding New Pages
 
-## Support & Resources
+1. Create new file in `pages/` directory
+2. Name it with number prefix: `6_New_Page.py`
+3. Add page configuration:
+```python
+import streamlit as st
+st.set_page_config(page_title="New Page", page_icon="🎯")
+```
 
-- FastAPI Documentation: https://fastapi.tiangolo.com/
-- Transformers: https://huggingface.co/docs/transformers
-- Mental Health Resources: https://www.nami.org/
+### Modifying AI Responses
 
-## License
+Edit the `get_bot_response()` function in `3_AI_Chat.py`
 
-This project is for educational and support purposes. Always consult with qualified mental health professionals for serious concerns.
+## 🐛 Troubleshooting
+
+### Import Errors
+```bash
+pip install --upgrade -r requirements.txt
+```
+
+### Port Already in Use
+```bash
+streamlit run Home.py --server.port 8502
+```
+
+### Session State Issues
+Clear browser cache or use incognito mode
+
+## 📚 Resources
+
+- [Streamlit Documentation](https://docs.streamlit.io/)
+- [Streamlit Gallery](https://streamlit.io/gallery)
+- [Mental Health Resources](https://www.nami.org/)
+
+## 🤝 Contributing
+
+Contributions welcome! Areas for improvement:
+- Database integration
+- User authentication
+- More AI models
+- Mobile optimization
+- Additional features
+
+## 📄 License
+
+Educational and support purposes. Consult legal counsel for healthcare data regulations.
+
+## 🆘 Support
+
+**Crisis Resources:**
+- **988** - Suicide & Crisis Lifeline (US)
+- **741741** - Crisis Text Line (Text HOME)
+- **911** - Emergency Services
+
+## 🙏 Acknowledgments
+
+- Streamlit team for the amazing framework
+- Mental health professionals for guidance
+- Open-source AI/ML community
+
+---
+
+**Remember: Your mental health matters. This tool is here to support you, but professional help is always available when you need it.** 💙
