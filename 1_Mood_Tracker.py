@@ -133,4 +133,3 @@ else:
 st.divider()
 st.caption("💙 Your mental health matters. Keep tracking to understand your patterns better.")
 
-# Made with Bob
