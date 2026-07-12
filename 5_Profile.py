@@ -126,4 +126,4 @@ with col2:
 st.divider()
 st.caption("💙 Your data is secure and private. We never share your information with third parties.")
 
-# Made with Bob
+
