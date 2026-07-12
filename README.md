@@ -1,17 +1,17 @@
-# 🧠 MindCare - Streamlit Version
+# MindCare - Streamlit Version
 
 AI-powered mental health monitoring application built with Streamlit.
 
-## 🌟 Features
+##  Features
 
-- **📊 Dashboard** - Overview of your mental health status with charts and metrics
-- **😊 Mood Tracker** - Log daily mood with interactive slider and emoji visualization
-- **📝 Journal** - Write entries with real-time AI sentiment analysis
-- **💬 AI Chat** - Intelligent chatbot for mental health support
-- **📚 Resources** - Crisis hotlines, articles, videos, and exercises
-- **👤 Profile** - Manage your account and settings
+- **Dashboard** - Overview of your mental health status with charts and metrics
+- **Mood Tracker** - Log daily mood with interactive slider and emoji visualization
+- **Journal** - Write entries with real-time AI sentiment analysis
+- **AI Chat** - Intelligent chatbot for mental health support
+- **Resources** - Crisis hotlines, articles, videos, and exercises
+- **Profile** - Manage your account and settings
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Install Dependencies
 
@@ -28,7 +28,7 @@ streamlit run Home.py
 
 The app will open automatically in your browser at `http://localhost:8501`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 streamlit-app/
@@ -43,7 +43,7 @@ streamlit-app/
 └── README.md                    # This file
 ```
 
-## 🎯 How to Use
+## How to Use
 
 ### Dashboard (Home)
 - View your mental health overview
@@ -81,7 +81,7 @@ streamlit-app/
 - View your statistics
 - Security settings
 
-## 🔧 Configuration
+##  Configuration
 
 ### Customization
 
@@ -101,7 +101,7 @@ textColor = "#262730"
 font = "sans serif"
 ```
 
-## 🤖 AI Features
+##  AI Features
 
 ### Sentiment Analysis
 - **VADER**: Rule-based sentiment analysis
@@ -114,21 +114,21 @@ Automatically detects concerning keywords:
 - Self-harm indicators
 - Severe depression markers
 
-## 📊 Data Storage
+## Data Storage
 
 Currently uses Streamlit's session state for data storage. For production:
 - Add database integration (SQLite, PostgreSQL)
 - Implement user authentication
 - Add data persistence
 
-## ⚠️ Important Notes
+## Important Notes
 
 1. **Not a Replacement**: This app is a support tool, not a replacement for professional mental health care
 2. **Crisis Support**: Always call 988 (US) or local emergency services in crisis
 3. **Privacy**: Data is stored locally in session state (not persistent)
 4. **Development**: This is a development version, not production-ready
 
-## 🔒 Security Considerations
+## Security Considerations
 
 For production deployment:
 - [ ] Add user authentication
@@ -138,7 +138,7 @@ For production deployment:
 - [ ] Add input validation
 - [ ] Follow HIPAA/GDPR compliance
 
-## 🚀 Deployment
+## Deployment
 
 ### Streamlit Cloud (Free)
 
@@ -165,7 +165,7 @@ EXPOSE 8501
 CMD ["streamlit", "run", "Home.py"]
 ```
 
-## 📝 Development
+## Development
 
 ### Adding New Pages
 
@@ -181,7 +181,7 @@ st.set_page_config(page_title="New Page", page_icon="🎯")
 
 Edit the `get_bot_response()` function in `3_AI_Chat.py`
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Import Errors
 ```bash
@@ -196,13 +196,13 @@ streamlit run Home.py --server.port 8502
 ### Session State Issues
 Clear browser cache or use incognito mode
 
-## 📚 Resources
+## Resources
 
 - [Streamlit Documentation](https://docs.streamlit.io/)
 - [Streamlit Gallery](https://streamlit.io/gallery)
 - [Mental Health Resources](https://www.nami.org/)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! Areas for improvement:
 - Database integration
@@ -211,18 +211,18 @@ Contributions welcome! Areas for improvement:
 - Mobile optimization
 - Additional features
 
-## 📄 License
+## License
 
 Educational and support purposes. Consult legal counsel for healthcare data regulations.
 
-## 🆘 Support
+## Support
 
 **Crisis Resources:**
 - **988** - Suicide & Crisis Lifeline (US)
 - **741741** - Crisis Text Line (Text HOME)
 - **911** - Emergency Services
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Streamlit team for the amazing framework
 - Mental health professionals for guidance
@@ -230,4 +230,4 @@ Educational and support purposes. Consult legal counsel for healthcare data regu
 
 ---
 
-**Remember: Your mental health matters. This tool is here to support you, but professional help is always available when you need it.** 💙
+**Remember: Your mental health matters. This tool is here to support you, but professional help is always available when you need it.** 
