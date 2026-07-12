@@ -1,14 +1,14 @@
-# 🚀 Git Setup Guide - MindCare AI Mental Health Monitoring
+# Git Setup Guide - MindCare AI Mental Health Monitoring
 
 Complete guide to push your project to GitHub.
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Git installed on your system
 - GitHub account created
 - Terminal/Command Line access
 
-## 🎯 Quick Setup (5 Steps)
+## Quick Setup (5 Steps)
 
 ### Step 1: Initialize Git Repository
 
@@ -47,9 +47,9 @@ git branch -M main
 git push -u origin main
 ```
 
-## 📁 What Will Be Pushed
+## What Will Be Pushed
 
-### ✅ Included Files
+### Included Files
 
 ```
 mental-health-ai/
@@ -103,7 +103,7 @@ mental-health-ai/
         └── 5_Profile.py
 ```
 
-### ❌ Excluded Files (via .gitignore)
+### Excluded Files (via .gitignore)
 
 - `node_modules/` - Node dependencies
 - `venv/` - Python virtual environment
@@ -113,7 +113,7 @@ mental-health-ai/
 - `.DS_Store` - Mac system files
 - `*.log` - Log files
 
-## 🔧 Detailed Git Commands
+## Detailed Git Commands
 
 ### Initialize Repository
 
@@ -163,7 +163,7 @@ git branch -M main
 git push -u origin main
 ```
 
-## 📝 Good Commit Messages
+## Good Commit Messages
 
 Use clear, descriptive commit messages:
 
@@ -189,7 +189,7 @@ git commit -m "Docs: Add comprehensive setup guide"
 git commit -m "Docs: Update README with Indian resources"
 ```
 
-## 🌿 Branching Strategy
+## Branching Strategy
 
 ### Create Feature Branch
 
@@ -218,7 +218,7 @@ git merge feature/new-feature
 git push origin main
 ```
 
-## 🔄 Regular Updates
+## Regular Updates
 
 ### Pull Latest Changes
 
@@ -234,7 +234,7 @@ git commit -m "Your commit message"
 git push origin main
 ```
 
-## 📊 Repository Settings
+## Repository Settings
 
 ### Recommended GitHub Settings
 
@@ -259,16 +259,16 @@ git push origin main
 
 4. **License**: Choose appropriate license (MIT recommended for open source)
 
-## 🔒 Security Best Practices
+## Security Best Practices
 
 ### Never Commit These
 
-❌ API keys
-❌ Passwords
-❌ Database credentials
-❌ `.env` files
-❌ Personal data
-❌ Large binary files
+API keys
+Passwords
+Database credentials
+`.env` files
+Personal data
+Large binary files
 
 ### Use .env.example Instead
 
@@ -282,7 +282,7 @@ DATABASE_URL=postgresql://real_connection_string
 API_KEY=sk-real-api-key-12345
 ```
 
-## 📦 Large Files
+## Large Files
 
 If you have large files (>100MB):
 
@@ -299,7 +299,7 @@ git add .gitattributes
 git commit -m "Add Git LFS tracking"
 ```
 
-## 🐛 Common Issues
+## Common Issues
 
 ### Issue: "fatal: remote origin already exists"
 
@@ -331,7 +331,7 @@ git rm --cached large_file.bin
 git commit -m "Remove large file"
 ```
 
-## 📱 GitHub Desktop (Alternative)
+## GitHub Desktop (Alternative)
 
 If you prefer GUI:
 
@@ -343,7 +343,7 @@ If you prefer GUI:
 6. Choose public/private
 7. Click "Publish"
 
-## 🎯 Quick Reference
+## Quick Reference
 
 ```bash
 # Status
@@ -377,13 +377,13 @@ git reset --soft HEAD~1
 git checkout -- filename
 ```
 
-## 📚 Additional Resources
+## Additional Resources
 
 - [Git Documentation](https://git-scm.com/doc)
 - [GitHub Guides](https://guides.github.com/)
 - [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
-## ✅ Verification Checklist
+## Verification Checklist
 
 Before pushing:
 
@@ -395,7 +395,7 @@ Before pushing:
 - [ ] Code is tested and working
 - [ ] Commit message is clear
 
-## 🎊 After Pushing
+## After Pushing
 
 Your repository will be live at:
 ```
@@ -408,7 +408,7 @@ Share it with:
 - Open source community
 - Mental health organizations
 
-## 📞 Need Help?
+##  Need Help?
 
 - GitHub Support: https://support.github.com/
 - Git Documentation: https://git-scm.com/
@@ -416,6 +416,6 @@ Share it with:
 
 ---
 
-**Happy Coding! 🚀**
+**Happy Coding! **
 
-Your AI Mental Health Monitoring System is ready to share with the world! 🇮🇳💙
+Your AI Mental Health Monitoring System is ready to share with the world! 
