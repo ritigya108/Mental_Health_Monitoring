@@ -250,4 +250,4 @@ with col3:
 st.divider()
 st.caption("💙 Remember: These resources complement but don't replace professional mental health care.")
 
-# Made with Bob
+
