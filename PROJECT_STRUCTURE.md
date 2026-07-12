@@ -1,53 +1,53 @@
-# 📁 Complete Project Structure - MindCare AI Mental Health Monitoring
+# Complete Project Structure - MindCare AI Mental Health Monitoring
 
-## 🗂️ Full Directory Tree
+## Full Directory Tree
 
 ```
 mental-health-ai/
 │
-├── 📄 README.md                          # Main project documentation
-├── 📄 QUICKSTART.md                      # Quick setup guide
-├── 📄 .gitignore                         # Git ignore rules
+├── README.md                          # Main project documentation
+├── QUICKSTART.md                      # Quick setup guide
+├── .gitignore                         # Git ignore rules
 │
-├── 📂 backend/                           # Python FastAPI Backend
-│   ├── 📄 main.py                        # Main API application (192 lines)
-│   ├── 📄 models.py                      # Database models (88 lines)
-│   ├── 📄 database.py                    # Database configuration (31 lines)
-│   ├── 📄 ai_analyzer.py                 # AI sentiment analysis (254 lines)
-│   ├── 📄 requirements.txt               # Python dependencies (20 packages)
-│   ├── 📄 .env.example                   # Environment variables template
-│   └── 📄 README.md                      # Backend documentation (179 lines)
+├── backend/                           # Python FastAPI Backend
+│   ├── main.py                        # Main API application (192 lines)
+│   ├── models.py                      # Database models (88 lines)
+│   ├── database.py                    # Database configuration (31 lines)
+│   ├── ai_analyzer.py                 # AI sentiment analysis (254 lines)
+│   ├── requirements.txt               # Python dependencies (20 packages)
+│   ├── .env.example                   # Environment variables template
+│   └── README.md                      # Backend documentation (179 lines)
 │
-└── 📂 frontend/                          # React Frontend
-    ├── 📄 package.json                   # Node.js dependencies
+└── frontend/                          # React Frontend
+    ├── package.json                   # Node.js dependencies
     │
-    ├── 📂 public/                        # Static files
-    │   └── 📄 index.html                 # HTML template (21 lines)
+    ├── public/                        # Static files
+    │   └── index.html                 # HTML template (21 lines)
     │
-    └── 📂 src/                           # Source code
-        ├── 📄 index.js                   # React entry point (10 lines)
-        ├── 📄 index.css                  # Global styles (17 lines)
-        ├── 📄 App.js                     # Main app component (105 lines)
+    └── src/                           # Source code
+        ├── index.js                   # React entry point (10 lines)
+        ├── index.css                  # Global styles (17 lines)
+        ├── App.js                     # Main app component (105 lines)
         │
-        ├── 📂 components/                # Reusable components
-        │   └── 📄 Navigation.js          # Sidebar navigation (117 lines)
+        ├── components/                # Reusable components
+        │   └── Navigation.js          # Sidebar navigation (117 lines)
         │
-        ├── 📂 pages/                     # Page components
-        │   ├── 📄 Dashboard.js           # Dashboard page (262 lines)
-        │   ├── 📄 MoodTracker.js         # Mood tracking page (243 lines)
-        │   ├── 📄 Journal.js             # Journal page (placeholder)
-        │   ├── 📄 ChatBot.js             # Chatbot page (placeholder)
-        │   ├── 📄 Resources.js           # Resources page (placeholder)
-        │   └── 📄 Profile.js             # Profile page (placeholder)
+        ├── pages/                     # Page components
+        │   ├── Dashboard.js           # Dashboard page (262 lines)
+        │   ├── MoodTracker.js         # Mood tracking page (243 lines)
+        │   ├── Journal.js             # Journal page (placeholder)
+        │   ├── ChatBot.js             # Chatbot page (placeholder)
+        │   ├── Resources.js           # Resources page (placeholder)
+        │   └── Profile.js             # Profile page (placeholder)
         │
-        ├── 📂 services/                  # API services
-        │   └── 📄 api.js                 # API client (115 lines)
+        ├── services/                  # API services
+        │   └── api.js                 # API client (115 lines)
         │
-        └── 📂 utils/                     # Utility functions
+        └── utils/                     # Utility functions
             └── (empty - for future utilities)
 ```
 
-## 📊 File Statistics
+## File Statistics
 
 ### Backend Files (7 files)
 | File | Lines | Purpose |
@@ -84,7 +84,7 @@ mental-health-ai/
 | QUICKSTART.md | 242 | Quick start guide |
 | .gitignore | 75 | Git ignore configuration |
 
-## 📦 Total Project Size
+## Total Project Size
 
 - **Total Files Created**: 23 files
 - **Total Lines of Code**: ~2,500+ lines
@@ -92,98 +92,98 @@ mental-health-ai/
 - **Frontend Code**: ~900+ lines
 - **Documentation**: ~825 lines
 
-## 🎯 Key Components Breakdown
+## Key Components Breakdown
 
 ### Backend Components
 
 #### 1. **main.py** - API Routes
 ```
-✅ Health check endpoints
-✅ User management (register, profile)
-✅ Mood tracking (log, history)
-✅ Journal entries (create, retrieve)
-✅ AI analysis (sentiment, risk)
-✅ Recommendations engine
-✅ Chatbot endpoint
+Health check endpoints
+User management (register, profile)
+Mood tracking (log, history)
+Journal entries (create, retrieve)
+AI analysis (sentiment, risk)
+Recommendations engine
+Chatbot endpoint
 ```
 
 #### 2. **ai_analyzer.py** - AI Engine
 ```
-✅ MentalHealthAnalyzer class
-✅ VADER sentiment analysis
-✅ TextBlob sentiment analysis
-✅ Transformer models integration
-✅ Crisis keyword detection
-✅ Risk assessment algorithm
-✅ Recommendation generator
+MentalHealthAnalyzer class
+VADER sentiment analysis
+TextBlob sentiment analysis
+Transformer models integration
+Crisis keyword detection
+Risk assessment algorithm
+Recommendation generator
 ```
 
 #### 3. **models.py** - Database Schema
 ```
-✅ User model
-✅ MoodEntry model
-✅ JournalEntry model
-✅ RiskAssessment model
-✅ ChatHistory model
-✅ Resource model
+User model
+MoodEntry model
+JournalEntry model
+RiskAssessment model
+ChatHistory model
+Resource model
 ```
 
 #### 4. **database.py** - Database Config
 ```
-✅ SQLAlchemy setup
-✅ Session management
-✅ Database initialization
-✅ Connection handling
+SQLAlchemy setup
+Session management
+Database initialization
+Connection handling
 ```
 
 ### Frontend Components
 
 #### 1. **App.js** - Main Application
 ```
-✅ React Router setup
-✅ Material-UI theme
-✅ Route configuration
-✅ Layout structure
+React Router setup
+Material-UI theme
+Route configuration
+Layout structure
 ```
 
 #### 2. **Navigation.js** - Sidebar
 ```
-✅ Menu items with icons
-✅ Active route highlighting
-✅ Crisis hotline info
-✅ Responsive design
+Menu items with icons
+Active route highlighting
+Crisis hotline info
+Responsive design
 ```
 
 #### 3. **Dashboard.js** - Main Dashboard
 ```
-✅ Risk assessment display
-✅ Weekly statistics
-✅ Mood trend chart
-✅ Recommendations list
-✅ Quick actions
-✅ Emergency alerts
+Risk assessment display
+Weekly statistics
+Mood trend chart
+Recommendations list
+Quick actions
+Emergency alerts
 ```
 
 #### 4. **MoodTracker.js** - Mood Logging
 ```
-✅ 1-10 mood scale
-✅ Emoji visualization
-✅ Interactive slider
-✅ Notes input
-✅ Quick select buttons
-✅ Tips sidebar
+1-10 mood scale
+Emoji visualization
+Interactive slider
+Notes input
+Quick select buttons
+Tips sidebar
 ```
 
 #### 5. **api.js** - API Service
 ```
-✅ Axios configuration
-✅ Request interceptors
-✅ Response interceptors
-✅ All API methods
-✅ Error handling
+Axios configuration
+Request interceptors
+Response interceptors
+All API methods
+Error handling
 ```
 
-## 🔧 Dependencies
+## Dependencies
 
 ### Backend (Python)
 ```
@@ -224,7 +224,7 @@ date-fns@2.30.0
 react-scripts@5.0.1
 ```
 
-## 📍 File Locations
+## File Locations
 
 All files are located in:
 ```
@@ -241,9 +241,9 @@ All files are located in:
 /Users/vishwachi/Desktop/mental-health-ai/frontend/
 ```
 
-## 🚀 What's Implemented
+## What's Implemented
 
-### ✅ Fully Implemented
+### Fully Implemented
 - Complete backend API structure
 - Database models and configuration
 - AI sentiment analysis engine
@@ -254,14 +254,14 @@ All files are located in:
 - API service layer
 - Documentation
 
-### 🔄 Partially Implemented (Placeholders)
+### Partially Implemented (Placeholders)
 - Journal page
 - Chatbot page
 - Resources page
 - Profile page
 - User authentication
 
-### 📋 To Be Implemented
+### To Be Implemented
 - User authentication system
 - Database migrations
 - Unit tests
@@ -271,7 +271,7 @@ All files are located in:
 - Advanced AI features
 - Real-time notifications
 
-## 📖 How to Use This Structure
+## How to Use This Structure
 
 1. **Navigate to project**: `cd ~/Desktop/mental-health-ai`
 2. **Backend setup**: Follow `backend/README.md`
@@ -279,7 +279,7 @@ All files are located in:
 4. **Quick start**: Follow `QUICKSTART.md`
 5. **Full docs**: Read main `README.md`
 
-## 🎓 Learning Path
+## Learning Path
 
 1. Start with `QUICKSTART.md` to get running
 2. Read `README.md` for full understanding
@@ -290,4 +290,4 @@ All files are located in:
 
 ---
 
-**All files are ready to use! Follow QUICKSTART.md to start your application.** 🚀
+**All files are ready to use! Follow QUICKSTART.md to start your application.** 
