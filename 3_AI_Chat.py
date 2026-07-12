@@ -222,4 +222,4 @@ if user_input:
 st.divider()
 st.caption("💙 This AI provides support but is not a replacement for professional mental health care.")
 
-# Made with Bob
+
