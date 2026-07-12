@@ -193,4 +193,4 @@ else:
 st.divider()
 st.caption("💙 Journaling helps you understand yourself better. Keep writing!")
 
-# Made with Bob
+
