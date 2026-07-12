@@ -211,4 +211,4 @@ st.divider()
 st.caption("💙 Remember: This is a support tool. For professional help, contact a mental health provider.")
 st.caption("🚨 Emergency (India): KIRAN 1800-599-0019 | Vandrevala 1860-2662-345 | Police 100")
 
-# Made with Bob
+
